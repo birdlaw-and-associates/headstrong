@@ -13,6 +13,7 @@ import css from './style.css';
 import { AppBar, Button } from '@material-ui/core';
 import avatar from '../images/avatar.png';
 import Follow from './Follow.jsx';
+import GraphWindow from './GraphWindow.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -209,6 +210,7 @@ class App extends Component {
             <div>
 
               <AppBar>
+
                 <div className='logo'>
                         HeadStrong 2.0
 
