@@ -1,5 +1,6 @@
 # Headstrong 3.0
 Senior Immersion Legacy App
+
 Development Team: Amelia Neville, Taylor Suarez, Benjamin Adams, Benjamin Lyon
 
 ## Description
