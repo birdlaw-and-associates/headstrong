@@ -135,17 +135,29 @@ Google Oauth requires a google cloud account. First create your account and then
 5. Run npm start to run the server
 
 ## .env Variable Names
+
 PORT=
+
 host=localhost
+
 database=headstrong
+
 user=root
+
 password=
+
 google_clientID=
+
 google_clientSecret=
+
 weatherbit_token=
+
 IPStack_access_key=
+
 cloud_name=
+
 cloud_api_key=
+
 cloud_api_secret=
 
 ## Database
