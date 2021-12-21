@@ -8,18 +8,23 @@ Headstrong is an application designed to provide the user with a relaxing, stres
 
 Upon entering the site, users are greeted by a motivational quote which can be liked and saved to look back on. Also, a feed of public journal entries is displayed where they can follow other Users if they like their comments.
 
-
- Users can then click on write entry, enter in a title, a journal body and upload an image. Users are also prompted to select their present mood. A tool is provided to help generate ideas in case of writers block. The memory will be captured with the current weather at the user's location and their current mood.
+Users can then click on write entry, enter in a title, a journal body and upload an image. Users are also prompted to select their present mood. A tool is provided to help generate ideas in case of writers block. The memory will be captured with the current weather at the user's location and their current mood.
 
 At any point, a user can view a memory to reflect on their progress. Memories can be deleted or refreshed for a new random memory. If the user does not like their memory, they have the option to delete it.
 
- Also, the application has a designated section designed to displayed all public comments of those the User has followed.
+Also, the application has a designated section designed to displayed all public comments of those the User has followed.
 
- If the User would like to escape  or draw their feelings out, a Drawing section is provided.
+If the User would like to escape  or draw their feelings out, a Drawing section is provided.
 
- A Resources tab is provided to the user, which includes a list of different services in a variety of areas in Mental Health
+A Resources tab is provided to the user, which includes a list of different services in a variety of areas in Mental Health
 
+Users are also able to see their daily horoscope, select their birth sign, and select a horoscope from a range of dates to see what their day will be like.
 
+A tarot card tab allows users to draw a series of tarot cards, representing their past, their present, and their future.
+
+The Sounds tab will let you play some binaunual beats to sooth your internal vibrations, and give you a soothing mood to create your better day.
+
+The "How're you?" tab lets users see their moods charted over a series of days, and a collection of all other users moods over the timeline of their posts.
 
 
 ## Dependencies
@@ -124,10 +129,24 @@ Google Oauth requires a google cloud account. First create your account and then
 
 ## Installation/Start-uo
 1. First fork the repo and clone it to your local machine.
-2. Get all env keys
+2. Get all env keys, the env variable names are listed below this section.
 3. Run npm install to install all dependencies
 4. Run npm run dev to start Webpack
 5. Run npm start to run the server
+
+## .env Variable Names
+PORT=
+host=localhost
+database=headstrong
+user=root
+password=
+google_clientID=
+google_clientSecret=
+weatherbit_token=
+IPStack_access_key=
+cloud_name=
+cloud_api_key=
+cloud_api_secret=
 
 ## Database
 Setup Clever Cloud account to gain access to database.
@@ -137,4 +156,7 @@ If Sequelize is installed, start the server:
 sequelize.sync
 If Sequelize is not installed, check out the Sequelize documentation for instructions on how to proceed.
 https://sequelize.org/master/manual/getting-started.html
+
+## Additional Notes:
+When setting up your Google OAuth keys, keep in mind to set up your authorized Javascript origin to `http://127.0.0.1:3000` and `http://localhost:3000`, and your Authorized Redirect URI's to `http://localhost:3000/auth/google/callback`.
 
